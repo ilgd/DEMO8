@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link href="../css/login.css" rel="stylesheet"/>
+    <link href="../css/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <div id="grey_bg"></div>
+    <div id="login_box">
+        <div class="header">
+            用户登录
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+            <input id="mail" type="text" class="form-control" placeholder="电子邮箱">
+        </div>
+        <span class="reminder" id="mail_reminder"> </span>
+        <div class="input-group">
+            <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+            <input id="password" type="password" class="form-control" placeholder="密码">
+        </div>
+        <span class="reminder" id="password_reminder"></span>
+        <div class="checkbox">
+            <label>
+                <input id="check" type="checkbox" value="remember-me">记住我
+            </label>
+            <a class="forget-password" href="/resetPassword">忘记密码?</a>
+        </div>
+        <a id="login_btn" href="javascript:login();" class="btn btn-lg btn-success btn-block" type="submit">登录</a>
+    </div>
+<script type="text/javascript" src="../js/jquery/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../js/jquery/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/login.js"></script>
+<script type="text/javascript" src="../js/bootstrap/bootstrap.min.js"></script>
+</body>
+</html>
